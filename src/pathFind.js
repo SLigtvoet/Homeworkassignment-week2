@@ -1,19 +1,15 @@
-function pathFind (path, object) {
-  
-  const foo = path[0]
-  return object[foo]
-
+function pathFind (path, object, i) {
+  if(!i){
+    i = 0;
+  }
+  if (path.length === i) {
+    return object
+  } 
+  const foo = object[path[i]];
+  return pathFind (path, foo, ++i)
 }
 
 
-
-
-
-
-const obj = {
-    foo: "Hey"
-  }
-pathFind(["foo"], obj)
 
 
 module.exports = {pathFind}

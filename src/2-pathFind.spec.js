@@ -10,7 +10,7 @@ describe("Assignment 2 - pathFind", function() {
     )
   })
 
-  it.only("should return the property from an object", function() {
+  it("should return the property from an object", function() {
     const { pathFind } = require("./pathFind")
     const obj = {
       foo: "Hey"
