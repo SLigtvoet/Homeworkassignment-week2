@@ -41,7 +41,7 @@ describe("Assignment 1 - ShoppingCart", function() {
     )
   })
 
-  it.only("cloned should be a separate copy", function() {
+  it("cloned should be a separate copy", function() {
     const ShoppingCart = require("../src/ShoppingCart")
     const cart1 = new ShoppingCart()
     cart1.addItem("Rolex watch", 2, 250.1)

@@ -1,7 +1,7 @@
 const assert = require("assert")
 
 describe("Assignment 3 - async", function() {
-  it("JS file should exist, and should have named exports", function() {
+  it.only("JS file should exist, and should have named exports", function() {
     const {
       giveItBackLater,
       addSomePromises,

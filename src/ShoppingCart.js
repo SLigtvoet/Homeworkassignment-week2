@@ -4,16 +4,13 @@ module.exports = class ShoppingCart {
 // class ShoppingCart {
     constructor(){
         this.items = []
-
     }
     getItems(){
         return this.items
     }
     
-
     addItem(name,quantity,pricePerUnit){
         this.items.push({name,quantity,pricePerUnit})
-        
     }
 
     clear(){
@@ -21,8 +18,9 @@ module.exports = class ShoppingCart {
     }
 
     clone(){
-        return this.items
-    }
+      return this.getItems()
+     }
+        
 
 
 }
