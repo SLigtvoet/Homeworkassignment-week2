@@ -18,9 +18,11 @@ module.exports = class ShoppingCart {
     }
 
     clone(){
-      return this.getItems()
+    //    return new ShoppingCart;
+    const deepClone = new ShoppingCart
+    deepClone.items = JSON.parse(JSON.stringify(this.getItems()))
+    return deepClone
      }
-        
 
 
 }
