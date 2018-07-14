@@ -9,7 +9,4 @@ function pathFind (path, object, i) {
   return pathFind (path, foo, ++i)
 }
 
-
-
-
 module.exports = {pathFind}
