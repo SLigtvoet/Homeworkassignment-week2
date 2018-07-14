@@ -1,5 +1,13 @@
 function pathFind (path, object) {
+  
+  const foo = path[0]
+  return object[foo]
+
 }
+
+
+
+
 
 
 const obj = {
